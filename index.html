@@ -38,7 +38,7 @@ canvas{position:fixed;inset:0;pointer-events:none}
 <div class=box><div class=number id=seconds>0</div><div class=label>Seconds</div></div>
 </div></div>
 <script>
-const t=new Date("September, 2026 17:30:00").getTime();
+const t=new Date("September 13, 2026 17:30:00").getTime();
 function u(){let d=t-Date.now();if(d<=0){document.body.innerHTML='<canvas id=c></canvas><div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font:900 5rem Arial;color:white">PERMIS OBTENU! 🚗</div>';return;}
 days.textContent=Math.floor(d/86400000);hours.textContent=Math.floor(d/3600000)%24;minutes.textContent=Math.floor(d/60000)%60;seconds.textContent=Math.floor(d/1000)%60;}
 setInterval(u,1000);u();
